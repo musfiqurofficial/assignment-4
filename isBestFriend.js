@@ -1,6 +1,6 @@
 // Problem 5: isBestFriend
 
-function isBestFrind(me = { name: 'tom', friend: 'rock' }, myFriend = { name: 'rock', friend: 'tom' }) {
+function isBestFriend(me = { name: 'tom', friend: 'rock' }, myFriend = { name: 'rock', friend: 'tom' }) {
 
     if (me.name === myFriend.friend && me.friend === myFriend.name) {
         return true;
@@ -9,3 +9,4 @@ function isBestFrind(me = { name: 'tom', friend: 'rock' }, myFriend = { name: 'r
         return false;
     }
 }
+console.log(isBestFriend());
