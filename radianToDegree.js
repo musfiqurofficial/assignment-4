@@ -1,4 +1,4 @@
-// Problem:2 radianToDegree
+// Problem 1: radianToDegree
 
 function radianToDegree(radian) {
     const radianCalculate = radian * 180 / Math.PI;
