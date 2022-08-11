@@ -3,6 +3,10 @@
 function radianToDegree(radian) {
     const radianCalculate = radian * 180 / Math.PI;
     let degree = radianCalculate.toFixed(2);
-    return degree;
+
+    if (radian === parseInt(radian) || radian === parseFloat(radian)) {
+        return degree;
+    } else {
+        return 'Please enter a Valid Number';
+    }
 }
-console.log(radianToDegree(199));

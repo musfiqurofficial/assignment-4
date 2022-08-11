@@ -9,5 +9,3 @@ function isBestFrind(me = { name: 'tom', friend: 'rock' }, myFriend = { name: 'r
         return false;
     }
 }
-const isFriendShip = isBestFrind();
-console.log(isFriendShip);

@@ -3,15 +3,16 @@
 function publicBusFare(peopleQuantity) {
     const busCapasity = 50;
     const microBusCapasity = 11;
-    const publicBusTicketPrice = 250;
+    const publicBusFare = 250;
 
-    let busCount = peopleQuantity / busCapasity;
-    let busVagshes = peopleQuantity % busCapasity;
+    let restPeople = peopleQuantity % busCapasity;
+    let restPeopleFere = restPeople % microBusCapasity;
 
-    let microBusCount = busVagshes / microBusCapasity;
-    let microBusVagshes = busVagshes % microBusCapasity;
+    let totalFera = restPeopleFere * publicBusFare;
 
-    let price = microBusVagshes * publicBusTicketPrice;
-    return price;
+    if (peopleQuantity === parseInt(peopleQuantity)) {
+        return totalFera;
+    } else {
+        return 'Please enter a Valid Number';
+    }
 }
-console.log(publicBusFare(12));

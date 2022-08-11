@@ -10,6 +10,11 @@ function oilPrice(dieselQuantity, petrolQuantity, octaneQuantity) {
     const totalOctaneCost = octanePrice * octaneQuantity;
 
     const totalCost = totalDieselCost + totalPetrolCost + totalOctaneCost;
-    return totalCost;
+
+    if (dieselQuantity === parseInt(dieselQuantity) && petrolQuantity === parseInt(petrolQuantity) && octaneQuantity === parseInt(octaneQuantity)) {
+        return totalCost;
+    } else {
+        return 'Please enter a Valid Number';
+    }
+
 }
-console.log(oilPrice(0, 2, 3));

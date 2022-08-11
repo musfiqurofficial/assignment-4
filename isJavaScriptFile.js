@@ -8,4 +8,3 @@ function isJavaScriptFile(fileName) {
         return false;
     }
 }
-console.log(isJavaScriptFile('index.pdf'));
